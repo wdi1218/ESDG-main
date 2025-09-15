@@ -13,7 +13,7 @@ This repository provides the implementation of our work on **multimodal sentimen
 
 We employ the following HuggingFace models (recommended to use [hf-mirror](https://hf-mirror.com/) for faster access in certain regions):
 
-1. [Llama-3.1-8B-Instruct](https://hf-mirror.com/meta-llama/Llama-3.1-8B-Instruct)  
+1. [Meta-Llama-3-8B-Instruct](https://hf-mirror.com/meta-llama/Meta-Llama-3-8B-Instruct)
    - For source domain dataset fine-tuning and target domain dataset inference
 
 2. [Baichuan2-7B-Base](https://hf-mirror.com/baichuan-inc/Baichuan2-7B-Base)  
