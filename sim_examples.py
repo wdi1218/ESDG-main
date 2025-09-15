@@ -32,10 +32,8 @@ target_sentences = [entry['text'] for entry in target_data]
 source_embeddings = model.encode(source_sentences)
 target_embeddings = model.encode(target_sentences)
 
-# 相似度矩阵（双向+平均）
-similarities_target_to_source = cosine_similarity(target_embeddings, source_embeddings)
-similarities_source_to_target = cosine_similarity(source_embeddings, target_embeddings)
-similarities = (similarities_target_to_source + similarities_source_to_target.T) / 2
+# 相似度矩阵
+similarities = cosine_similarity(target_embeddings, source_embeddings)
 
 # 标签类别（根据实际数据集的标签修改，如 "positive"/"neutral"/"negative"）
 labels = ["positive", "neutral", "negative"]
@@ -114,3 +112,4 @@ with open(output_json_path, "w", encoding="utf-8") as output_file:
     json.dump(output_data, output_file, ensure_ascii=False, indent=4)
 
 print(f"Processed data saved to {output_json_path}")
+
