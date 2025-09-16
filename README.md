@@ -1,8 +1,6 @@
 # ESDG-main
 Domain Adaptation Framework for Multimodal Sentiment Analysis Based on Dynamic Example Selection and Domain Knowledge Generation
 
-# README
-
 ## 📖 Project Overview
 
 This repository provides the implementation of our work on **multimodal sentiment analysis with domain adaptation**, leveraging large language models (LLMs) and vision-language models. Experiments are conducted on **MVSA** and **Yelp** datasets, among others. The code covers model downloading, dataset preprocessing, training, and inference.
